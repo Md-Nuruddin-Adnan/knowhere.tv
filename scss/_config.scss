@@ -1,0 +1,35 @@
+@font-face{
+  font-family: 'Proxima_Nova_Thin';
+  src: url(../fonts/Proxima_Nova_Thin.otf);
+}
+@font-face{
+  font-family: 'Proxima_Nova_Regular';
+  src: url(../fonts/Proxim_Nova_Regular.otf);
+}
+@font-face{
+  font-family: 'Proxima_Nova_Semibold';
+  src: url(../fonts/Proxima_Nova_Semibold.otf);
+}
+@font-face{
+  font-family: 'Proxima_Nova_Bold';
+  src: url(../fonts/Proxima_Nova_Bold.otf);
+}
+@font-face{
+  font-family: 'Proxima_Nova_Extrabold';
+  src: url(../fonts/Proxima_Nova_Extrabold.otf);
+}
+@font-face{
+  font-family: 'Proxima_Nova_Black';
+  src: url(../fonts/Proxima_Nova_Black.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+
+body {
+  font-family: 'Proxima_Nova_Semibold';
+}
+
+$primary-color: #ff5700;
+$secondary-color: #ffa500;
+$black-color: #000;
+$white-color: #fff;

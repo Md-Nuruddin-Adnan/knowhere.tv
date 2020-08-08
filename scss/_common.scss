@@ -1,0 +1,137 @@
+// ****** section-heading section start ******
+.section-heading {
+  border-bottom: 1px solid $secondary-color;
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  h2 {
+    display: inline-block;
+    position: relative;
+    padding: 20px 0;
+    font-family: 'Proxima_Nova_Black';
+    font-size: 30px;
+    color: #333;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 10px;
+      background: $secondary-color;
+      border-radius: 10px;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+  }
+
+  a {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgba(#333, 0.5);
+    @include transition_2s;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &.section-heading-sm {
+    margin-bottom: 20px;
+    h2 {
+      font-size: 20px;
+      padding: 15px 0;
+
+      &::before {
+        height: 8px;
+      }
+    }
+  }
+
+  &.section-heading-dark {
+    h2 {
+     color: $white-color;
+    }
+    a {
+      color: rgba(#fff, 0.5);
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+// ******//End of section-heading section ******
+
+
+// ****** v-card section start ******
+.v-card {
+  .video-thumbnail {
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    img{
+      @include transition_3s;
+    }
+
+    &::before{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: -moz-linear-gradient(180deg, rgba(17, 19, 23, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background-image: -webkit-linear-gradient(180deg, rgba(17, 19, 23, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background-image: -ms-linear-gradient(180deg, rgba(17, 19, 23, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background-image: linear-gradient(180deg, rgba(17, 19, 23, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+  .meta-date {
+    font-size: 13px;
+    color: rgba($black-color, .5);
+    padding: 15px 0 7px 0;
+  }
+  .video-title {
+    font-family: 'Proxima_Nova_Bold';
+    font-size: 14px;
+    color: $black-color;
+    margin-bottom: 5px;
+  }
+  .v-action {
+    li {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba($black-color, .4);
+      display: inline-block;
+      padding-right: 15px;
+    }
+  }
+}
+// ******//End of v-card section ******
+
+
+// ****** Trending section start ******
+.trending {
+  background: #070707;
+  padding: 40px 0;
+
+  .v-card {
+    .meta-date {
+      color: rgba($white-color, .5);
+    }
+    .video-title {
+      color: $white-color;
+    }
+    .v-action {
+      li {
+        color: rgba($white-color, .4);
+      }
+    }
+  }
+}
+// ******// End of Trending section ******

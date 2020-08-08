@@ -1,0 +1,132 @@
+#login_register {
+  .main-content {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    .heaidng {
+      font-size: 30px;
+      color: rgba($black-color, 0.75);
+      margin-bottom: 60px;
+    }
+    .full-form {
+      padding: 40px;
+      box-shadow: 0px 2px 36px 0px rgba(0, 0, 0, 0.08);
+      background: $white-color;
+      position: relative;
+
+      @media(min-width: 768px){
+        padding: 50px;
+
+        &::before{
+          content: '';
+          width: 0.5px;
+          height: 100%;
+          background: #dee2e6;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        &.signup-page::before{
+          display: none;
+        }
+      }
+
+      .corner-img {
+        position: absolute;
+        top: -27px;
+        right: -90px;
+        z-index: -1;
+
+        @media(max-width: 767px){
+          display: none;
+        }
+      }
+      
+      .form-heading {
+        font-family: 'Proxima_Nova_Bold';
+        font-size: 24px;
+        color: rgba($black-color, 0.9);
+        margin-bottom: 40px;
+      }
+
+      .form-control::placeholder,
+      .form-control {
+        font-family: 'Proxima_Nova_Regular';
+        font-size: 16px;
+        color: rgba($black-color, 0.4);
+        border-radius: 0;
+        border-color: #ddd;
+      }
+
+      .submit-btn {
+        background: $primary-color;
+        border-radius: 0;
+        color: $white-color;
+        font-family: 'Proxima_Nova_Bold';
+        font-size: 13px;
+        margin-top: 30px;
+
+        &:hover {
+          background: $secondary-color;
+        }
+      }
+
+      p {
+        color: $white-color;
+        color: rgba($black-color, 0.75);
+        font-size: 13px;
+        a {
+          color: $primary-color;
+        }
+      }
+
+      .login-form{
+        .custom-control-input:checked~.custom-control-label::before {
+          color: $white-color;
+          border-color: $primary-color;
+          background-color: $primary-color;
+        }
+        .custom-control-label{
+          font-size: 13px;
+          color: #171717;
+          line-height: 30px;
+        }
+        .forgot-link{
+          font-size: 13px;
+          color: $primary-color;
+        }
+      }
+
+      .login-option{
+        p{
+          font-family: 'Proxima_Nova_Regular';
+          font-size: 14px;
+          color: #666;
+        }
+        .create-account-btn {
+          background: $black-color;
+          border-radius: 0;
+          color: $white-color;
+          font-family: 'Proxima_Nova_Bold';
+          font-size: 13px;
+          margin-top: 30px;
+
+          &:hover {
+            background: $primary-color;
+          }
+        }
+        span{
+          font-family: 'Proxima_Nova_Bold';
+          font-size: 12px;
+          color: #666;
+        }
+        .api-login{
+          img{
+            padding: 30px 10px 10px 10px;
+          }
+        }
+      }
+    }
+  }
+}

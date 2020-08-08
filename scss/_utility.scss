@@ -1,0 +1,27 @@
+@mixin transition_2s {
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+@mixin transition_3s {
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.btn-primary-rounded {
+  font-size: 13px;
+  color: $white-color;
+  background: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 10px;
+  @include transition_2s;
+  
+  &:hover {
+    background: $secondary-color;
+  }
+}

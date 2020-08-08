@@ -1,0 +1,584 @@
+/*=== global css start === */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+/*===// end of global css === */
+/*=== config css start === */
+@font-face {
+  font-family: 'Proxima_Nova_Thin';
+  src: url(../fonts/Proxima_Nova_Thin.otf);
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Regular';
+  src: url(../fonts/Proxim_Nova_Regular.otf);
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Semibold';
+  src: url(../fonts/Proxima_Nova_Semibold.otf);
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Bold';
+  src: url(../fonts/Proxima_Nova_Bold.otf);
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Extrabold';
+  src: url(../fonts/Proxima_Nova_Extrabold.otf);
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Black';
+  src: url(../fonts/Proxima_Nova_Black.otf);
+}
+
+body {
+  font-family: 'Proxima_Nova_Semibold';
+}
+
+/*===// end of config css === */
+/*=== utility css start === */
+.btn-primary-rounded {
+  font-size: 13px;
+  color: #fff;
+  background: #ff5700;
+  border: 1px solid #ff5700;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.btn-primary-rounded:hover {
+  background: #ffa500;
+}
+
+/*===// end of utility css === */
+/*=== common css start === */
+.section-heading {
+  border-bottom: 1px solid #ffa500;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.section-heading h2 {
+  display: inline-block;
+  position: relative;
+  padding: 20px 0;
+  font-family: 'Proxima_Nova_Black';
+  font-size: 30px;
+  color: #333;
+}
+
+.section-heading h2::before {
+  content: '';
+  width: 100%;
+  height: 10px;
+  background: #ffa500;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.section-heading a {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.5);
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.section-heading a:hover {
+  color: #ff5700;
+}
+
+.section-heading.section-heading-sm {
+  margin-bottom: 20px;
+}
+
+.section-heading.section-heading-sm h2 {
+  font-size: 20px;
+  padding: 15px 0;
+}
+
+.section-heading.section-heading-sm h2::before {
+  height: 8px;
+}
+
+.section-heading.section-heading-dark h2 {
+  color: #fff;
+}
+
+.section-heading.section-heading-dark a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.section-heading.section-heading-dark a:hover {
+  color: #ff5700;
+}
+
+.v-card .video-thumbnail {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.v-card .video-thumbnail img {
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+
+.v-card .video-thumbnail::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, rgba(17, 19, 23, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.v-card .video-thumbnail:hover img {
+  transform: scale(1.05);
+}
+
+.v-card .meta-date {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 15px 0 7px 0;
+}
+
+.v-card .video-title {
+  font-family: 'Proxima_Nova_Bold';
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.v-card .v-action li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.trending {
+  background: #070707;
+  padding: 40px 0;
+}
+
+.trending .v-card .meta-date {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.trending .v-card .video-title {
+  color: #fff;
+}
+
+.trending .v-card .v-action li {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/*===// end of common css === */
+/*=== login_register css start === */
+#login_register .main-content {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+#login_register .main-content .heaidng {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 60px;
+}
+
+#login_register .main-content .full-form {
+  padding: 40px;
+  box-shadow: 0px 2px 36px 0px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  #login_register .main-content .full-form {
+    padding: 50px;
+  }
+  #login_register .main-content .full-form::before {
+    content: '';
+    width: 0.5px;
+    height: 100%;
+    background: #dee2e6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #login_register .main-content .full-form.signup-page::before {
+    display: none;
+  }
+}
+
+#login_register .main-content .full-form .corner-img {
+  position: absolute;
+  top: -27px;
+  right: -90px;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  #login_register .main-content .full-form .corner-img {
+    display: none;
+  }
+}
+
+#login_register .main-content .full-form .form-heading {
+  font-family: 'Proxima_Nova_Bold';
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 40px;
+}
+
+#login_register .main-content .full-form .form-control::placeholder,
+#login_register .main-content .full-form .form-control {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+  border-color: #ddd;
+}
+
+#login_register .main-content .full-form .submit-btn {
+  background: #ff5700;
+  border-radius: 0;
+  color: #fff;
+  font-family: 'Proxima_Nova_Bold';
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+#login_register .main-content .full-form .submit-btn:hover {
+  background: #ffa500;
+}
+
+#login_register .main-content .full-form p {
+  color: #fff;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 13px;
+}
+
+#login_register .main-content .full-form p a {
+  color: #ff5700;
+}
+
+#login_register .main-content .full-form .login-form .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #ff5700;
+  background-color: #ff5700;
+}
+
+#login_register .main-content .full-form .login-form .custom-control-label {
+  font-size: 13px;
+  color: #171717;
+  line-height: 30px;
+}
+
+#login_register .main-content .full-form .login-form .forgot-link {
+  font-size: 13px;
+  color: #ff5700;
+}
+
+#login_register .main-content .full-form .login-option p {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 14px;
+  color: #666;
+}
+
+#login_register .main-content .full-form .login-option .create-account-btn {
+  background: #000;
+  border-radius: 0;
+  color: #fff;
+  font-family: 'Proxima_Nova_Bold';
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+#login_register .main-content .full-form .login-option .create-account-btn:hover {
+  background: #ff5700;
+}
+
+#login_register .main-content .full-form .login-option span {
+  font-family: 'Proxima_Nova_Bold';
+  font-size: 12px;
+  color: #666;
+}
+
+#login_register .main-content .full-form .login-option .api-login img {
+  padding: 30px 10px 10px 10px;
+}
+
+/*===// end of login_register css === */
+/*=== navbar section start === */
+@media (min-width: 1200px) {
+  .full-nav .container {
+    max-width: 80%;
+  }
+}
+
+.full-nav .top-nav {
+  background: #040404;
+  padding: 7px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.full-nav .top-nav ul {
+  text-align: center;
+}
+
+.full-nav .top-nav ul li {
+  padding: 0 7px;
+  display: inline-block;
+  text-align: center;
+}
+
+.full-nav .top-nav ul li i {
+  color: #fff;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.full-nav .top-nav ul li i:hover {
+  color: #ff5700;
+}
+
+.full-nav .top-nav ul li a {
+  font-family: 'Proxima_Nova_Bold';
+  font-size: 13px;
+  color: #fff;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.full-nav .top-nav ul li a:hover {
+  color: #ff5700;
+}
+
+.full-nav .main-nav {
+  background: #181818;
+}
+
+.full-nav .main-nav .navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 2rem;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.full-nav .main-nav .navbar-dark .navbar-nav .nav-link.active, .full-nav .main-nav .navbar-dark .navbar-nav .nav-link:hover {
+  color: #ff5700;
+}
+
+.full-nav .main-nav .dropdown-item {
+  font-size: 14px;
+}
+
+/*===// end of navbar section === */
+/*=== ? section start === */
+/*===// end of ? section === */
+/*=== footer section start === */
+.footer {
+  background: #f4f5f7;
+}
+
+.footer .footer-top {
+  padding: 80px 0 60px 0;
+}
+
+.footer .footer-top .footer-contact p {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.5);
+  line-height: 16px;
+  padding: 30px 0;
+}
+
+.footer .footer-top .footer-contact .s-link li {
+  display: inline-block;
+  padding: 0 3px;
+}
+
+.footer .footer-top .footer-contact .s-link li a {
+  color: #556274;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  display: grid;
+  text-align: center;
+  place-items: center;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.footer .footer-top .footer-contact .s-link li a:hover {
+  color: #fff;
+  background: #ff5700;
+}
+
+.footer .footer-top .heading {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.footer .footer-top .footer-link ul li a {
+  font-size: 14px;
+  color: #6d6d6d;
+  display: block;
+  padding: 3px 0;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.footer .footer-top .footer-link ul li a:hover {
+  color: #ff5700;
+}
+
+.footer .footer-top .newsletter p {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.8);
+  line-height: 20px;
+  padding-bottom: 30px;
+}
+
+.footer .footer-top .newsletter .newsletter-form .form-control {
+  border-radius: 0;
+  border: 1px solid #efefef;
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.footer .footer-top .newsletter .newsletter-form .form-control::placeholder {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.footer .footer-bottom {
+  padding: 15px 0;
+}
+
+@media (min-width: 1200px) {
+  .footer .footer-bottom .container {
+    max-width: 80%;
+  }
+}
+
+.footer .footer-bottom .copyright {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+
+.footer .footer-bottom .copyright span {
+  font-family: 'Proxima_Nova_Semibold';
+  text-transform: uppercase;
+  color: #2a2a2a;
+}
+
+.footer .footer-bottom ul {
+  text-align: center;
+}
+
+.footer .footer-bottom ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.footer .footer-bottom ul li::before {
+  content: '';
+  width: 1px;
+  height: 15px;
+  background: rgba(51, 51, 51, 0.4);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.footer .footer-bottom ul li:last-child::before {
+  display: none;
+}
+
+.footer .footer-bottom ul li a {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 14px;
+  color: #666;
+  padding: 0 10px;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.footer .footer-bottom ul li a:hover {
+  color: #ff5700;
+}
+
+/*===// end of footer section === */
