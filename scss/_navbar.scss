@@ -1,4 +1,6 @@
 .full-nav {
+  position: relative;
+  z-index: 999;
   .container {
     @media(min-width: 1200px){
       max-width: 80%;
@@ -40,11 +42,17 @@
   .main-nav {
     background: #181818;
 
+    @media (max-width: 575px) {
+      .navbar-brand{
+        max-width: 180px;
+      }
+    }
     .navbar-dark .navbar-nav .nav-link {
       color: $white-color;
       font-size: 15px;
       text-transform: uppercase;
       line-height: 2rem;
+      white-space: nowrap;
       @include transition_2s;
 
       &.active,

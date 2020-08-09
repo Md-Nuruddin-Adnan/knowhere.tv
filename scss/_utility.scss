@@ -25,3 +25,16 @@
     background: $secondary-color;
   }
 }
+
+.btn-light.btn-lg {
+  font-size: 16px;
+  color: #a2a2a2;
+  border-radius: 0;
+  background-color: #f8f8f8;
+  @include transition_2s;
+  
+  &:hover {
+    background: $primary-color;
+    color: $white-color;
+  }
+}
