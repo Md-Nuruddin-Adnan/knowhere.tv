@@ -22,7 +22,7 @@
           @include transition_2s;
 
           &:hover {
-            color: $primary-color;
+            color: $secondary-color;
           }
         }
         a {
@@ -31,8 +31,9 @@
           color: $white-color;
           @include transition_2s;
 
+          &.active,
           &:hover {
-            color: $primary-color;
+            color: $secondary-color;
           }
         }
       }
@@ -57,7 +58,7 @@
 
       &.active,
       &:hover {
-        color: $primary-color;
+        color: $secondary-color;
       }
     }
 

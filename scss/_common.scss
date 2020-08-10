@@ -247,3 +247,187 @@
   }
 }
 // ******// End of Trending section ******
+
+
+
+// ****** widget section start ******
+.widget{
+  background: #fafafa;
+  padding: 20px;
+
+  &.popular{
+    ul{
+      li{
+        padding: 10px 20px;
+        margin: 0 -20px;
+        @include transition_2s;
+        &:hover {
+          background: darken(#fafafa, 5);
+        }
+        @media(max-width: 575px){
+          .widget-thumbnail{
+            margin-bottom: 10px;
+          }
+        }
+        .badge{
+          width: 25px;
+          height: 25px;
+          background: $secondary-color;
+          border: 2px solid $white-color;
+          border-radius: 50%;
+          display: block;
+          position: absolute;
+          top: -12px;
+          right: -12px;
+          font-family: 'Proxima_Nova_Bold';
+          font-size: 14px;
+          line-height: 14px;
+          text-align: center;
+          color: $white-color;
+        }
+        .meta-date{
+          font-size: 13px;
+          color: rgba($black-color, .5);
+        }
+        .video-title{
+          font-family: 'Proxima_Nova_Bold';
+          font-size: 13px;
+          color: $black-color;
+          position: relative;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  &.category{
+    ul{
+      li{
+        border-bottom: 1px solid rgba(#979797, 0.2);
+        padding: 10px 0 10px 15px;
+        position: relative;
+        &:last-child{
+          border-bottom: 0;
+        }
+
+        &::before{
+          content: '';
+          width: 10px;
+          height: 10px;
+          border: 2px solid $secondary-color;
+          background: transparent;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+        }
+
+        .category-name{
+          font-family: 'Proxima_Nova_Bold';
+          font-size: 14px;
+          color: $black-color;
+          @include transition_2s;
+        }
+        .total-number{
+          font-family: 'Proxima_Nova_Regular';
+          font-size: 14px;
+          color: rgba($black-color, 0.5);
+          @include transition_2s;
+        }
+
+        &:hover{
+          .category-name{
+            color: $secondary-color;
+          }
+          .total-number{
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+
+  &.subscribe{
+    .subscribe-form{
+      padding: 10px 0;
+      .form-control{
+        font-size: 14px;
+        color: rgba($black-color, 0.6);
+        border: 1px solid #efefef;
+        border-radius: 10px;
+        padding: 25px 15px;
+
+        &::placeholder{
+          font-size: 14px;
+          color: rgba($black-color, 0.4);
+        }
+      }
+      .submit-btn{
+        padding: 15px;
+        font-family: 'Proxima_Nova_Bold';
+        font-size: 14px;
+      }
+    }
+    p{
+      font-family: 'Proxima_Nova_Regular';
+      font-size: 14px;
+      color: #999999;
+      text-align: center;
+    }
+  }
+
+  &.featured-channels{
+    @media(max-width:575px){
+      padding: 20px 0;
+    }
+    ul{
+      li{
+        padding: 10px;
+        background: $white-color;
+        border: 1px solid #f3f3f3;
+        border-radius: 10px;
+        margin: 10px 0;
+        @include transition_2s;
+
+        &:hover{
+          box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+        }
+
+        .channel-info{
+          .img img{
+            border-radius: 50%;
+            padding-right: 10px;
+          }
+          .text{
+            white-space: nowrap;
+            .title{
+              font-family: 'Proxima_Nova_Bold';
+              font-size: 15px;
+              color: $black-color;
+              overflow: hidden;
+              text-overflow: ellipsis; 
+            }
+            .total-member{
+              font-family: 'Montserrat', sans-serif;
+              font-size: 11px;
+              font-weight: 400;
+              color: rgba($black-color, .4);
+            }
+          }
+        }
+
+        .subscribe-link{
+          font-size: 13px;
+          color: $primary-color;
+          padding-right: 0;
+
+          &.subscribe-complete{
+            color: #c0c0c0;
+          }
+        }
+      }
+    }
+  }
+}
+// ******// End of widget section ******

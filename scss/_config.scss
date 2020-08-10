@@ -29,6 +29,12 @@ body {
   font-family: 'Proxima_Nova_Semibold';
 }
 
+@media(min-width: 1200px){
+  .container{
+    max-width: 1170px;
+  }
+}
+
 $primary-color: #ff5700;
 $secondary-color: #ffa500;
 $black-color: #000;
