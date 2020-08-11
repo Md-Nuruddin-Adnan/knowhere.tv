@@ -1,0 +1,25 @@
+#channel_about{
+  .about-owner{
+    padding: 30px 0;
+    .section-heading{
+      h2{
+        font-size: 22px;
+      }
+    }
+    p{
+      color: #8e8e8e;
+      font-family: 'Proxima_Nova_Regular';
+      font-size: 14px;
+      padding: rgba($black-color, 0.7)
+    }
+  }
+
+  .most-view{
+    padding: 10px 0 30px 0;
+    .section-heading{
+      h2{
+        font-size: 22px;
+      }
+    }
+  }
+}

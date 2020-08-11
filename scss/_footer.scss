@@ -23,8 +23,9 @@
             background: $white-color;
             border: 1px solid #e5e5e5;
             border-radius: 50%;
-            display: grid;
             text-align: center;
+            line-height: 40px;
+            display: block;
             place-items: center;
             @include transition_2s;
 

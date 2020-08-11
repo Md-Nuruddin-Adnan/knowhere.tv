@@ -407,6 +407,88 @@ body {
   color: rgba(0, 0, 0, 0.7);
 }
 
+.playlist-card {
+  margin-bottom: 40px;
+}
+
+.playlist-card .video-thumbnail {
+  display: block;
+  position: relative;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.playlist-card .video-thumbnail::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.playlist-card .video-thumbnail .total-video {
+  font-family: 'Proxima_Nova_Bold';
+  font-size: 17px;
+  color: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.playlist-card .video-thumbnail .total-video i {
+  padding-right: 5px;
+}
+
+.playlist-card .video-thumbnail .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  z-index: 3;
+  opacity: 0;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.playlist-card .video-thumbnail:hover::before {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.playlist-card .video-thumbnail:hover .play-btn {
+  opacity: 1;
+}
+
+.playlist-card .text .title {
+  font-family: 'Proxima_Nova_Bold';
+  font-size: 17px;
+  color: #000;
+  padding: 10px 0 0 0;
+}
+
+.playlist-card .text .updated-time {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+}
+
 .trending {
   background: #070707;
   padding: 40px 0;
@@ -617,6 +699,212 @@ body {
 
 .widget.featured-channels ul li .subscribe-link.subscribe-complete {
   color: #c0c0c0;
+}
+
+.widget.author-widget .author-logo {
+  display: inline-block;
+  position: relative;
+}
+
+.widget.author-widget .author-logo img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin: 30px 0;
+}
+
+.widget.author-widget .author-logo i {
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50%;
+  background: #ff5700;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+
+.widget.author-widget .title {
+  font-size: 16px;
+  color: #171717;
+}
+
+.widget.author-widget .total-subscribe {
+  font-size: 16px;
+  color: #ff5700;
+}
+
+.widget.author-widget .subscribe-link {
+  margin: 30px 0;
+}
+
+.widget.author-widget .widget-bottom {
+  position: relative;
+  padding: 20px 0;
+}
+
+.widget.author-widget .widget-bottom::before {
+  content: '';
+  width: 1px;
+  height: 50px;
+  background: #dee2e6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.widget.author-widget .widget-bottom p {
+  font-family: 'Proxima_Nova_Bold';
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.widget.author-widget .widget-bottom span {
+  font-family: 'Proxima_Nova_Bold';
+  font-size: 14px;
+  color: black;
+  display: block;
+}
+
+.cover_banner .main-banner {
+  min-height: 315px;
+  background: url(../images/channel_listing/cover_banner.png) no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+}
+
+.cover_banner .main-banner::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  background-image: -o-linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+.cover_banner .main-banner .main-banner-inner {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.cover_banner .main-banner .main-banner-inner .channel-info .channel-logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.cover_banner .main-banner .main-banner-inner .channel-info .channel-name {
+  font-size: 30px;
+  color: #fff;
+  padding: 20px 0 5px 0;
+}
+
+.cover_banner .main-banner .main-banner-inner .channel-info .channel-name i {
+  font-size: 15px;
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-radius: 50%;
+  background: #fff;
+  color: #ff5700;
+  text-align: center;
+  line-height: 25px;
+  margin-left: 10px;
+}
+
+.cover_banner .main-banner .main-banner-inner .channel-info .breadcrumb {
+  background: transparent;
+  padding: 0;
+}
+
+.cover_banner .main-banner .main-banner-inner .channel-info .breadcrumb .breadcrumb-item {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cover_banner .main-banner .main-banner-inner .channel-info .breadcrumb .breadcrumb-item a {
+  color: #ff5700;
+}
+
+.cover_banner .main-banner .main-banner-inner .link .nav .nav-item .nav-link {
+  padding: .5rem .5rem;
+  line-height: 3rem;
+  color: #fff;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.cover_banner .main-banner .main-banner-inner .link .nav .nav-item .nav-link:hover {
+  color: #ff5700;
+}
+
+.cover_banner .main-banner .main-banner-inner .link .nav .dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.cover_banner .main-banner .main-banner-inner .link .nav .dropdown .dropdown-item {
+  font-size: 14px;
+}
+
+.cover_banner .bottom-nav {
+  background-image: linear-gradient(180deg, #262626 0%, black 100%);
+}
+
+@media (max-width: 575px) {
+  .cover_banner .bottom-nav .nav {
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+}
+
+.cover_banner .bottom-nav .nav .nav-link {
+  color: #8e8e8e;
+  font-family: 'Proxima_Nova_Bold';
+  font-size: 15px;
+  padding: 20px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+@media (max-width: 575px) {
+  .cover_banner .bottom-nav .nav .nav-link {
+    padding: 20px 10px;
+  }
+}
+
+.cover_banner .bottom-nav .nav .nav-link:hover {
+  color: #fff;
+}
+
+.cover_banner .bottom-nav .nav .nav-link.active {
+  color: #fff;
+}
+
+.cover_banner .bottom-nav .nav .nav-link.active::before {
+  content: '';
+  width: calc(100% - 40px);
+  height: 10px;
+  background: #ff5700;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*===// end of common css === */
@@ -1466,6 +1754,129 @@ body {
 }
 
 /*===// end of channel_listing section === */
+/*=== channel_about section start === */
+#channel_about .about-owner {
+  padding: 30px 0;
+}
+
+#channel_about .about-owner .section-heading h2 {
+  font-size: 22px;
+}
+
+#channel_about .about-owner p {
+  color: #8e8e8e;
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 14px;
+  padding: rgba(0, 0, 0, 0.7);
+}
+
+#channel_about .most-view {
+  padding: 10px 0 30px 0;
+}
+
+#channel_about .most-view .section-heading h2 {
+  font-size: 22px;
+}
+
+/*===// end of channel_about section === */
+/*=== channel_playlist section start === */
+#channel_playlist .personalized-playlist .section-heading h2,
+#channel_playlist .playlist-owner .section-heading h2 {
+  font-size: 22px;
+}
+
+/*===// end of channel_playlist section === */
+/*=== authors section start === */
+#authors .cover_banner .main-banner {
+  background: url(../images/channel_listing/cover_banner_2.png) no-repeat center center/cover;
+}
+
+#authors .intro .horizontal-card .video-full {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#authors .intro .author-widget .author-logo {
+  display: inline-block;
+  position: relative;
+}
+
+#authors .intro .author-widget .author-logo img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+#authors .intro .author-widget .author-logo i {
+  top: 20px;
+  right: 5px;
+}
+
+#authors .intro .author-widget .subscribe-link {
+  margin: 25px 0;
+}
+
+#authors .intro .author-widget p {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 15px;
+}
+
+#authors .authors-choice .playlist .prev-arrow,
+#authors .authors-choice .playlist .next-arrow {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background: white;
+  color: #a2a2a2;
+  position: absolute;
+  cursor: pointer;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: -1.414px 1.414px 6px 0px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+#authors .authors-choice .playlist .prev-arrow:hover,
+#authors .authors-choice .playlist .next-arrow:hover {
+  background: #ff5700;
+  color: #fff;
+}
+
+#authors .authors-choice .playlist:hover .prev-arrow,
+#authors .authors-choice .playlist:hover .next-arrow {
+  opacity: 1;
+}
+
+#authors .authors-choice .playlist .prev-arrow {
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+#authors .authors-choice .playlist .next-arrow {
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 767px) {
+  #authors .authors-choice .playlist .slick-list {
+    padding: 0 15% 0 0;
+  }
+}
+
+/*===// end of authors section === */
 /*=== ? section start === */
 /*===// end of ? section === */
 /*=== footer section start === */
@@ -1497,8 +1908,9 @@ body {
   background: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 50%;
-  display: grid;
   text-align: center;
+  line-height: 40px;
+  display: block;
   place-items: center;
   transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;

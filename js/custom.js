@@ -95,3 +95,36 @@ $('#channel_listing .playlist').slick({
   ]
 });
 
+
+// authors-choice slider
+$('#authors .playlist').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: true,
+  autoplay: false,
+  infinite: true,
+  dots: false,
+  prevArrow: '<span class="prev-arrow"><i class="far fa-angle-left"></i></span>',
+  nextArrow: '<span class="next-arrow"><i class="far fa-angle-right"></i></span>',
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
+});
+
