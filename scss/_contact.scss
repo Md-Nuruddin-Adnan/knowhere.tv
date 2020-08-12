@@ -1,0 +1,181 @@
+#contact{
+  .top-action{
+    background-image: -moz-linear-gradient( -90deg, rgb(248,248,248) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb(248,248,248) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(248,248,248) 0%, rgb(255,255,255) 100%);
+    background-image: linear-gradient( -90deg, rgb(248,248,248) 0%, rgb(255,255,255) 100%);
+    padding: 30px 0 0 0;
+    
+    .page-heading{
+      font-size: 30px;
+      color: #151515;
+    }
+    .breadcrumb{
+      background: transparent;
+      padding: 0;
+
+      .breadcrumb-item{
+        font-size: 16px;
+        color: rgba(#151515, 0.5);
+      }
+    }
+  }
+
+  .contact-form {
+    background-image: -moz-linear-gradient( -90deg, rgb(244,245,247) 0%, rgb(250,251,252) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb(244,245,247) 0%, rgb(250,251,252) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(244,245,247) 0%, rgb(250,251,252) 100%);
+    background-image: linear-gradient( -90deg, rgb(244,245,247) 0%, rgb(250,251,252) 100%);
+    padding: 60px 0;
+
+    .form-heading{
+      font-size: 30px;
+      color: #151515;
+      text-align: center;
+    }
+    p{
+      font-size: 16px;
+      color: rgba(#151515, 0.5);
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    label{
+      font-size: 18px;
+      color: #322e46;
+    }
+    .form-control {
+      font-size: 18px;
+      color: darken(#928fa0, 10);
+    }
+    .form-control::placeholder{
+      font-size: 18px;
+      color: #928fa0;
+    }
+    .btn-primary-rounded{
+      font-size: 14px;
+      min-width: 110px;
+      margin-top: 20px;
+    }
+
+  }
+
+
+  .faq{
+    padding: 60px 0;
+
+    .faq-heading{
+      font-size: 30px;
+      color: #151515;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    ul{
+      li{
+        margin-bottom: 30px;
+        .faq-ques{
+          font-family: 'Proxima_Nova_Bold';
+          font-size: 22px;
+          color: #2b292d;
+          margin-bottom: 5px;
+        }
+        p.answer {
+          font-family: 'Proxima_Nova_Regular';
+          font-size: 16px;
+          color: #2b292d;
+        }
+      }
+    }
+  }
+
+  .contact-location{
+    padding: 60px 0;
+    background-image: -moz-linear-gradient( 180deg, rgb(244,245,247) 0%, rgb(255,255,255) 100%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(244,245,247) 0%, rgb(255,255,255) 100%);
+    background-image: -ms-linear-gradient( 180deg, rgb(244,245,247) 0%, rgb(255,255,255) 100%);
+    background-image: linear-gradient( 180deg, rgb(244,245,247) 0%, rgb(255,255,255) 100%);
+
+    .contact-location-heading{
+      font-size: 30px;
+      color: #151515;
+      margin-bottom: 20px;
+    }
+
+    address{
+      margin-bottom: 60px;
+      i{
+        color: $primary-color;;
+        margin: 5px 10px 0 0;
+        font-size: 20px;
+      }
+      span{
+        font-size: 16px;
+        color: #777;
+        white-space: pre-line;
+        @media(max-width: 575px){
+          white-space: unset;
+        }
+      }
+    }
+
+    .more{
+      margin-bottom: 40px;
+      .heading{
+        font-family: 'Proxima_Nova_Bold';
+        font-size: 18px;
+        color: #151515;
+        margin-bottom: 5px;
+      }
+      p{
+        font-family: 'Proxima_Nova_Regular';
+        font-size: 14px;
+        color: rgba(#151515, 0.5);
+      }
+    }
+
+    .social-link{
+      @media(max-width:767px){
+        margin-bottom: 30px;
+      }
+      .heading{
+        font-family: 'Proxima_Nova_Bold';
+        font-size: 18px;
+        color: #151515;
+        margin-bottom: 15px;
+      }
+      ul{
+        li{
+          display: inline-block;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+
+  .partner{
+    padding: 60px 0;
+    background: #f4f5f7;
+
+    .heading{
+      font-family: 'Proxima_Nova_Bold';
+      font-size: 30px;
+      color: #151515;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .partner-slide{
+      .col-12{
+        display: grid;
+        place-items: center center;
+        min-height: 110px;
+
+        img{
+          filter: grayscale(1);
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  
+}

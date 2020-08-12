@@ -1,0 +1,135 @@
+#discussion{
+  .message-form{
+    .section-heading{
+      h2{
+        font-size: 22px;
+      }
+    }
+    textarea.form-control{
+      color: #928fa0;
+    }
+    .btn-primary-rounded{
+      font-size: 14px;
+      min-width: 110px;
+    }
+  }
+
+  // ****** chat-box section start ******
+  .chat-box{
+    .chat-box-heading{
+      margin-bottom: 30px;
+      .main-heading{
+        font-family: 'Proxima_Nova_Bold';
+        font-size: 16px;
+        color: $black-color;
+      }
+      .action{
+        span, .btn{
+          font-size: 13px;
+          color: rgba($black-color, 0.5);
+        }
+        .btn:hover{
+          color: $primary-color;
+        }
+      }
+    }
+    .all-comments{
+      li.single-comment{
+        padding: 20px;
+        @media(max-width: 575px){
+          padding: 10px;
+        }
+
+        .comment-box{
+         .user-img{
+           i{
+             color: rgba($black-color, .3);
+             margin: 10px 10px 0 0;
+           }
+           img{
+             width: 40px;
+             height: 40px;
+             border-radius: 50%;
+             border: 1px solid #d9d9d9;
+             display: block;
+             margin-right: 15px;
+           }
+         }
+         .text{
+           width: 100%;
+
+           .user-name{
+             font-size: 14px;
+             color: $black-color;
+             margin-right: 15px;
+           }
+           .date-time{
+            font-family: 'Proxima_Nova_Regular';
+            font-size: 13px;
+            color: rgba($black-color, 0.5);
+           }
+           .main-comment{
+            font-family: 'Proxima_Nova_Regular';
+            font-size: 14px;
+            color: rgba($black-color, 0.7);
+           }
+           .user-reaction{
+             li{
+               display: inline-block;
+               padding-right: 15px;
+               a{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 11px;
+                font-weight: 700;
+                color: rgba($black-color, 0.4);
+
+                &:hover{
+                  color: $primary-color;
+                }
+
+                i{
+                  padding-right: 3px;
+                }
+               }
+             }
+           }
+         }
+        }
+
+        .action{
+          visibility: hidden;
+          .dropdown{
+            .dropdown-toggle{
+              color: #999999;
+              font-size: 14px;
+
+              &::after{
+                display: none;
+              }
+            }
+
+            .dropdown-menu-right{
+              .dropdown-item{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        // hover effect
+        &:hover{
+          background: #f8f8f8;
+
+          .action{
+            visibility: visible;
+          }
+        }
+      }
+     }
+
+     .load-more.btn-light{
+       margin: 20px 0 40px;
+     }
+  }
+  // ******// End of chat-box section ******
+}
