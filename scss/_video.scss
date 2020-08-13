@@ -1,0 +1,345 @@
+#video{
+  .top-action{
+    background: #040404;
+    padding: 30px 0 150px 0;
+    
+    .page-heading{
+      font-size: 30px;
+      color: $white-color;
+    }
+    .breadcrumb{
+      background: transparent;
+      padding: 0;
+
+      .breadcrumb-item{
+        font-size: 16px;
+        color: rgba($white-color, 0.5);
+        a{
+          color: rgba($white-color, 0.5);
+        }
+        &:hover{
+          a{
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .video-full{
+    margin-top: -150px;
+    position: relative;
+    z-index: 5;
+
+    .bottom-action{
+      background: #2b2b2b;
+
+      .nav{
+        li{
+          border-right: 1px solid rgba($black-color, 1);
+          @media(max-width: 767px){
+            border-right: 0;
+          }
+          &:hover{
+            background: darken(#2b2b2b, 5);
+          }
+          .nav-link{
+            font-family: 'Proxima_Nova_Regular';
+            font-size: 13px;
+            color: rgba($white-color, 0.7);
+            @include transition_2s;
+            i{
+              padding-right: 3px;
+            }
+
+            &:hover{
+              background: darken(#2b2b2b, 10);
+              color: rgba($white-color, 1);
+            }
+          }
+        }
+      }
+
+      .more-action{
+        .custom-switch{
+          padding-top: 5px;
+          .text-label{
+            font-family: 'Proxima_Nova_Regular';
+            font-size: 13px;
+            padding-right: 50px;
+            color: $secondary-color;
+            margin-bottom: 0;
+          }
+        }
+        .custom-control-input:checked~.custom-control-label::before{
+          border-color:  $secondary-color;
+          background-color:  $secondary-color;
+        }
+
+        .dropdown{
+          .dropdown-toggle{
+            font-family: 'Proxima_Nova_Regular';
+            font-size: 13px;
+            color: rgba($white-color, 0.7);
+          }
+          .dropdown-item{
+            font-family: 'Proxima_Nova_Regular';
+            font-size: 13px;
+          }
+        }
+      }
+
+      @media(max-width: 991px){
+        .nav-link{
+          padding: .5rem;
+        }
+      }
+    }
+  }
+
+  .video-details{
+    .header{
+      padding-bottom: 20px;
+      .meta-data{
+        display: flex;
+        li{
+          font-size: 14px;
+          color: rgba($black-color, 0.5);
+          padding-right: 15px;
+
+          .badge-primary{
+            font-size: 14px;
+            background: $primary-color;
+            color: $white-color;
+            padding: 5px 20px;
+            margin-top: -2px;
+            display: block;
+          }
+        }
+        &.bottom{
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 600;
+        }
+      }
+
+      .video-title{
+        color: #171717;
+        font-size: 30px;
+        padding: 10px 0 15px 0;
+      }
+    }
+
+    .tags{
+      margin: 20px 0 30px 0;
+      .heading{
+        font-size: 14px;
+        color: $black-color;
+        margin-bottom: 10px;
+      }
+      .btn-outline-rounded{
+        font-size: 14px;
+        color: rgba(#333333, 0.7);
+        text-transform: uppercase;
+        border-radius: 5px;
+        border: 1px solid #afafaf;
+        height: 30px;
+
+        &:hover {
+          color: $white-color;
+        }
+      }
+    }
+
+    .description{
+      p{
+        font-family: 'Proxima_Nova_Regular';
+        font-size: 15px;
+        color: rgba($black-color, 0.7);
+      }
+
+      figure{
+        figcaption{
+          font-family: 'Proxima_Nova_Regular';
+          font-size: 13px;
+          color: rgba($black-color, 0.5);
+          font-style: italic;
+          padding: 5px 0 20px 0;
+        }
+      }
+
+      .inner-heading{
+        font-size: 20px;
+        color: #171717;
+        margin-bottom: 10px;
+      }
+    }
+
+    .load-more{
+      margin-top: 20px;
+    }
+
+  }
+
+  .message-form{
+    .section-heading{
+      h2{
+        font-size: 22px;
+      }
+    }
+    textarea.form-control{
+      color: #928fa0;
+    }
+    .btn-primary-rounded{
+      font-size: 14px;
+      min-width: 110px;
+    }
+  }
+
+  // ****** chat-box section start ******
+  .chat-box{
+    .chat-box-heading{
+      margin-bottom: 30px;
+      .main-heading{
+        font-family: 'Proxima_Nova_Bold';
+        font-size: 16px;
+        color: $black-color;
+      }
+      .action{
+        span, .btn{
+          font-size: 13px;
+          color: rgba($black-color, 0.5);
+        }
+        .btn:hover{
+          color: $primary-color;
+        }
+      }
+    }
+    .all-comments{
+      li.single-comment{
+        padding: 20px;
+        @media(max-width: 575px){
+          padding: 10px;
+        }
+
+        .comment-box{
+         .user-img{
+           i{
+             color: rgba($black-color, .3);
+             margin: 10px 10px 0 0;
+           }
+           img{
+             width: 40px;
+             height: 40px;
+             border-radius: 50%;
+             border: 1px solid #d9d9d9;
+             display: block;
+             margin-right: 15px;
+           }
+         }
+         .text{
+           width: 100%;
+
+           .user-name{
+             font-size: 14px;
+             color: $black-color;
+             margin-right: 15px;
+           }
+           .date-time{
+            font-family: 'Proxima_Nova_Regular';
+            font-size: 13px;
+            color: rgba($black-color, 0.5);
+           }
+           .main-comment{
+            font-family: 'Proxima_Nova_Regular';
+            font-size: 14px;
+            color: rgba($black-color, 0.7);
+           }
+           .user-reaction{
+             li{
+               display: inline-block;
+               padding-right: 15px;
+               a{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 11px;
+                font-weight: 700;
+                color: rgba($black-color, 0.4);
+
+                &:hover{
+                  color: $primary-color;
+                }
+
+                i{
+                  padding-right: 3px;
+                }
+               }
+             }
+           }
+         }
+        }
+
+        .action{
+          visibility: hidden;
+          .dropdown{
+            .dropdown-toggle{
+              color: #999999;
+              font-size: 14px;
+
+              &::after{
+                display: none;
+              }
+            }
+
+            .dropdown-menu-right{
+              .dropdown-item{
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        // hover effect
+        &:hover{
+          background: #f8f8f8;
+
+          .action{
+            visibility: visible;
+          }
+        }
+      }
+     }
+
+     .load-more.btn-light{
+       margin: 20px 0 40px;
+     }
+  }
+  // ******// End of chat-box section ******
+
+
+  .author-widget{
+    .author-logo{
+      display: inline-block;
+      position: relative;
+
+      img{
+        width: 120px;
+        height: 120px;
+        border: 1px solid rgba($black-color, .1);
+        border-radius: 50%;
+        margin: 20px 0;
+      }
+      i{
+        top: 20px;
+        right: 5px;
+      }
+    }
+    .subscribe-link{
+      margin: 25px 0;
+    }
+    p{
+      font-family: 'Proxima_Nova_Regular';
+      font-size: 14px;
+      color: rgba($black-color, 0.7);
+      padding-top: 15px;
+    }
+  }
+}

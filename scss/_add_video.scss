@@ -74,6 +74,20 @@
       margin: 40px 0;
     } 
 
+    // Drug and drop
+    .dropify-wrapper .dropify-message p {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+    .dropify-font:before, .dropify-wrapper .dropify-message span.file-icon:before, .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename span.file-icon:before, [class*=" dropify-font-"]:before, [class^=dropify-font-]:before{
+      color: $primary-color;
+    }
+    .dropify-wrapper{
+      height: 230px;
+      border-radius: 10px;
+      border: 1px solid #ced4da;
+    }
+
   }
 
 }

@@ -2304,6 +2304,21 @@ body {
   margin: 40px 0;
 }
 
+#add-video .add-video-form .dropify-wrapper .dropify-message p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+#add-video .add-video-form .dropify-font:before, #add-video .add-video-form .dropify-wrapper .dropify-message span.file-icon:before, #add-video .add-video-form .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner p.dropify-filename span.file-icon:before, #add-video .add-video-form [class*=" dropify-font-"]:before, #add-video .add-video-form [class^=dropify-font-]:before {
+  color: #ff5700;
+}
+
+#add-video .add-video-form .dropify-wrapper {
+  height: 230px;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+}
+
 /*===// end of add_video section === */
 /*=== discussion section start === */
 #discussion .message-form .section-heading h2 {
@@ -2434,6 +2449,351 @@ body {
 }
 
 /*===// end of discussion section === */
+/*=== video section start === */
+#video .top-action {
+  background: #040404;
+  padding: 30px 0 150px 0;
+}
+
+#video .top-action .page-heading {
+  font-size: 30px;
+  color: #fff;
+}
+
+#video .top-action .breadcrumb {
+  background: transparent;
+  padding: 0;
+}
+
+#video .top-action .breadcrumb .breadcrumb-item {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#video .top-action .breadcrumb .breadcrumb-item a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#video .top-action .breadcrumb .breadcrumb-item:hover a {
+  color: #ff5700;
+}
+
+#video .video-full {
+  margin-top: -150px;
+  position: relative;
+  z-index: 5;
+}
+
+#video .video-full .bottom-action {
+  background: #2b2b2b;
+}
+
+#video .video-full .bottom-action .nav li {
+  border-right: 1px solid black;
+}
+
+@media (max-width: 767px) {
+  #video .video-full .bottom-action .nav li {
+    border-right: 0;
+  }
+}
+
+#video .video-full .bottom-action .nav li:hover {
+  background: #1e1e1e;
+}
+
+#video .video-full .bottom-action .nav li .nav-link {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+#video .video-full .bottom-action .nav li .nav-link i {
+  padding-right: 3px;
+}
+
+#video .video-full .bottom-action .nav li .nav-link:hover {
+  background: #121212;
+  color: white;
+}
+
+#video .video-full .bottom-action .more-action .custom-switch {
+  padding-top: 5px;
+}
+
+#video .video-full .bottom-action .more-action .custom-switch .text-label {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 13px;
+  padding-right: 50px;
+  color: #ffa500;
+  margin-bottom: 0;
+}
+
+#video .video-full .bottom-action .more-action .custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #ffa500;
+  background-color: #ffa500;
+}
+
+#video .video-full .bottom-action .more-action .dropdown .dropdown-toggle {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#video .video-full .bottom-action .more-action .dropdown .dropdown-item {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 13px;
+}
+
+@media (max-width: 991px) {
+  #video .video-full .bottom-action .nav-link {
+    padding: .5rem;
+  }
+}
+
+#video .video-details .header {
+  padding-bottom: 20px;
+}
+
+#video .video-details .header .meta-data {
+  display: flex;
+}
+
+#video .video-details .header .meta-data li {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-right: 15px;
+}
+
+#video .video-details .header .meta-data li .badge-primary {
+  font-size: 14px;
+  background: #ff5700;
+  color: #fff;
+  padding: 5px 20px;
+  margin-top: -2px;
+  display: block;
+}
+
+#video .video-details .header .meta-data.bottom {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+#video .video-details .header .video-title {
+  color: #171717;
+  font-size: 30px;
+  padding: 10px 0 15px 0;
+}
+
+#video .video-details .tags {
+  margin: 20px 0 30px 0;
+}
+
+#video .video-details .tags .heading {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+#video .video-details .tags .btn-outline-rounded {
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.7);
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 1px solid #afafaf;
+  height: 30px;
+}
+
+#video .video-details .tags .btn-outline-rounded:hover {
+  color: #fff;
+}
+
+#video .video-details .description p {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#video .video-details .description figure figcaption {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  padding: 5px 0 20px 0;
+}
+
+#video .video-details .description .inner-heading {
+  font-size: 20px;
+  color: #171717;
+  margin-bottom: 10px;
+}
+
+#video .video-details .load-more {
+  margin-top: 20px;
+}
+
+#video .message-form .section-heading h2 {
+  font-size: 22px;
+}
+
+#video .message-form textarea.form-control {
+  color: #928fa0;
+}
+
+#video .message-form .btn-primary-rounded {
+  font-size: 14px;
+  min-width: 110px;
+}
+
+#video .chat-box .chat-box-heading {
+  margin-bottom: 30px;
+}
+
+#video .chat-box .chat-box-heading .main-heading {
+  font-family: 'Proxima_Nova_Bold';
+  font-size: 16px;
+  color: #000;
+}
+
+#video .chat-box .chat-box-heading .action span, #video .chat-box .chat-box-heading .action .btn {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#video .chat-box .chat-box-heading .action .btn:hover {
+  color: #ff5700;
+}
+
+#video .chat-box .all-comments li.single-comment {
+  padding: 20px;
+}
+
+@media (max-width: 575px) {
+  #video .chat-box .all-comments li.single-comment {
+    padding: 10px;
+  }
+}
+
+#video .chat-box .all-comments li.single-comment .comment-box .user-img i {
+  color: rgba(0, 0, 0, 0.3);
+  margin: 10px 10px 0 0;
+}
+
+#video .chat-box .all-comments li.single-comment .comment-box .user-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  display: block;
+  margin-right: 15px;
+}
+
+#video .chat-box .all-comments li.single-comment .comment-box .text {
+  width: 100%;
+}
+
+#video .chat-box .all-comments li.single-comment .comment-box .text .user-name {
+  font-size: 14px;
+  color: #000;
+  margin-right: 15px;
+}
+
+#video .chat-box .all-comments li.single-comment .comment-box .text .date-time {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#video .chat-box .all-comments li.single-comment .comment-box .text .main-comment {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#video .chat-box .all-comments li.single-comment .comment-box .text .user-reaction li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+#video .chat-box .all-comments li.single-comment .comment-box .text .user-reaction li a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#video .chat-box .all-comments li.single-comment .comment-box .text .user-reaction li a:hover {
+  color: #ff5700;
+}
+
+#video .chat-box .all-comments li.single-comment .comment-box .text .user-reaction li a i {
+  padding-right: 3px;
+}
+
+#video .chat-box .all-comments li.single-comment .action {
+  visibility: hidden;
+}
+
+#video .chat-box .all-comments li.single-comment .action .dropdown .dropdown-toggle {
+  color: #999999;
+  font-size: 14px;
+}
+
+#video .chat-box .all-comments li.single-comment .action .dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+#video .chat-box .all-comments li.single-comment .action .dropdown .dropdown-menu-right .dropdown-item {
+  font-size: 14px;
+}
+
+#video .chat-box .all-comments li.single-comment:hover {
+  background: #f8f8f8;
+}
+
+#video .chat-box .all-comments li.single-comment:hover .action {
+  visibility: visible;
+}
+
+#video .chat-box .load-more.btn-light {
+  margin: 20px 0 40px;
+}
+
+#video .author-widget .author-logo {
+  display: inline-block;
+  position: relative;
+}
+
+#video .author-widget .author-logo img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+#video .author-widget .author-logo i {
+  top: 20px;
+  right: 5px;
+}
+
+#video .author-widget .subscribe-link {
+  margin: 25px 0;
+}
+
+#video .author-widget p {
+  font-family: 'Proxima_Nova_Regular';
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 15px;
+}
+
+/*===// end of video section === */
 /*=== ? section start === */
 /*===// end of ? section === */
 /*=== footer section start === */
